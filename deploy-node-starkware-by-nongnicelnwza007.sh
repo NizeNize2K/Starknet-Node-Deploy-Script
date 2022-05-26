@@ -14,11 +14,6 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 
 
-### SET URL
-read -p "Enter you alchemy url : " alchemyurl
-
-sed -i "s/SETURL/${alchemyurl}/g" .env
-
 ### start docker-compose
 docker-compose down
 sleep 2

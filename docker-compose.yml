@@ -9,5 +9,5 @@ services:
     environment:
       - PATHFINDER_ETHEREUM_API_URL=$MYURL
       - RUST_LOG=info
-    volumes:
-      - pathfinder:/usr/share/pathfinder/data
+    #volumes:
+    #  - pathfinder:/usr/share/pathfinder/data
