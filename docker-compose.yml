@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  starknet-node:
+    container_name: starknet-node
+    image: eqlabs/pathfinder:$NODE_VERSION
+    ports:
+      - 9545:9545
+    environment:
+      - PATHFINDER_ETHEREUM_API_URL=$MYURL
+      - RUST_LOG=info
+    volumes:
+      - pathfinder:/usr/share/pathfinder/data
