@@ -1,7 +1,6 @@
 echo ------------ Start Deploy starkware Node------------ 
 
 
-cd Starknet-Node-Deploy-Script
 ###Prepare env
 sudo apt-get update
 sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
