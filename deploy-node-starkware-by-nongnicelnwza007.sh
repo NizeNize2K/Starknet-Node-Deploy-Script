@@ -1,7 +1,7 @@
 echo ------------ Start Deploy starkware Node------------ 
 
 
-mkdir -p $HOME/deploy-startnet-node
+cd Starknet-Node-Deploy-Script
 ###Prepare env
 sudo apt-get update
 sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
@@ -16,12 +16,9 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 
 ### SET URL
-
 read -p "Enter you alchemy url : " alchemyurl
 
 sed -i "s/SETURL/${alchemyurl}/g" .env
-
-cd $HOME/deploy-startnet-node
 
 ### start docker-compose
 docker-compose down
